@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang ="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name=viewport content="width=device-width, initial-scale=1">
+
+    <title>Beep // Game Design</title>
+
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/grid.css" rel="stylesheet">
+    <!-- normalize css from https://necolas.github.io/normalize.css/ -->
+    <link href="css/normalize.css" rel="stylesheet"> 
+    <link href="css/angled-edges.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <!-- FIXED HEADER NAVIGATION BAR /////////////////////////////////// -->
+    <section class="header-bar project-page-nav">
+
+      <div class="header-content-left">
+        <a href="index.html">
+        <div class="header-initial-icon">
+          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          viewBox="0 0 350 350" style="enable-background:new 0 0 350 350;" xml:space="preserve">
+          <line class="icon-line" x1="178.1" y1="62" x2="178.1" y2="316.6"/>
+          <line class="icon-line" x1="178.1" y1="62" x2="92.8" y2="177.7"/>
+          <line class="icon-line" x1="263.6" y1="176.8" x2="178.1" y2="62"/>
+          <line class="icon-line" x1="120.6" y1="139.3" x2="178.1" y2="214.3"/>
+          <line class="icon-line" x1="178.1" y1="214.3" x2="237" y2="141.2"/>
+          <polygon class="icon-line" points="21.8,62 334.4,62 178.1,320.3 "/>
+          </svg>
+        </div>
+
+        <h1> WAN-TEEN YANG </h1>
+        </a>
+      </div>
+
+      <!-- navigation  -->
+      <nav class="nav-bar project-nav">
+        <a class="button project-nav-button" id="fixedNavProj" href="index.html#projects">RETURN TO PROJECTS</a>
+      </nav>
+
+    </section>
+
+    <!-- PROJECT TOP //////////////////////////////////////////////////////// -->
+
+    <section id="project-top" class="beep-bg">
+      <div class="bg-overlay"></div>
+      <div class="project-content">
+        <h1> BEEP </h1>
+      </div>
+    </section>
+
+    <section id="project-overview">
+      <div class="project-overview-content">
+
+        <h2 class="subheader"> OVERVIEW </h2>
+        <div class="overview">
+          <p> Beep is a 3D action-adventure game about an alien with the ability to morph and adapt to its environment. After the alien's ship lands on a foreign planet, it must search for a new fuel source to power its spacecraft so that it can continue its journey through space. </p>
+       </div>
+
+        <div class="overview-breakdown">
+          <p>
+            <span class="label">SKILLS:</span>
+            Ideation, coding, debugging, playtesting
+          </p>
+          <p>
+            <span class="label">TOOLS:</span>
+            Unity3D, Adobe Illustrator, Autodesk Maya
+          </p>
+          <p>
+            <span class="label">TEAM:</span>
+            Nancy Chen, Danielle Ragas, Josephine Ryu
+          </p>
+        </div>
+      </div> 
+      <!-- end of overview content -->
+
+      <div class="nav-area">
+        <nav class="nav-bar">
+          <a href="http://gamejolt.com/games/beep/259483" class="button">PLAY THE GAME</a>
+
+          <a href="http://alces-team.tumblr.com/" class="button">DEVELOPMENT BLOG</a>
+        </nav>
+      </div>
+
+    </section>
+
+    <!-- FINAL RESULT //////////////////////////////////////////////////////// -->
+
+    <section id="final-result">
+      <div class="project-content">
+        <h1> TEASER TRAILER </h1>
+        <div class="video">
+          <figure>
+            <iframe src="https://player.vimeo.com/video/212249428?title=0&amp;byline=0&amp;portrait=0" width="640" height="360" allowfullscreen></iframe>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONCEPT //////////////////////////////////////////////////////// -->
+
+    <section id="concept">
+      <div class="project-content">
+          <h1> CONCEPT DEVELOPMENT</h1>
+          <p>
+            <span> After deliberating on several other concepts, my team settled on one about <span class="highlight">a shape-shifting alien</span> by drawing inspiration from the <a href="amorphous.html">short animation</a> we previously created together. </span>
+
+            <span class="spacer"></span>
+   
+            <span> We wanted the shape-shifting alien to travel through <span class="highlight">different biomes</span> inhabited by aliens based on <span class="highlight">different geometric shapes. Depending on the shape of the aliens or flora imitated, it would gain different skills.</span> We decided to <span class="highlight">focus on the first world</span> inhabited by cubes given the time constraints as it was the most fleshed out. </span>
+          </p>
+
+          <span class="spacer"></span>
+
+          <div class="images">
+            <div class="img-col-3">
+              <img src="imgs/beep/world1.png" alt="world 1 concept">
+              <div class="img-caption">| Cube World Concept</div>
+            </div>
+            <div class="img-col-3">
+              <img src="imgs/beep/world2.png" alt="world 2 concept">
+              <div class="img-caption">| Star World Concept</div>
+            </div>
+            <div class="img-col-3">
+              <img src="imgs/beep/world3.png" alt="world 3 concept">
+             <div class="img-caption"> | Pyramid World Concept</div>
+           </div>
+          </div>
+
+        </div>
+    </section>
+
+    <!-- PROGRAMMING //////////////////////////////////////////////////////// -->
+
+    <section id="programming">
+      <div class="project-content">
+          <h1> PROGRAMMING</h1>
+          <p class="intro"> As the team’s main programmer, I coded the bulk of the game mechanics and features. 
+          <span class="spacer"></span> 
+          Most notably this included the 
+          <a href="#morph-target">morphing ability and targeting system</a>, the <a href="#enemy-ai">enemy AI</a>, and the <a href="#puzzle">puzzle mechanics</a>.</p>
+
+          <!-- MORPHING ABILITY/TARGETING UI ///////-->
+          <div class="content-container" id="morph-target">
+            <h2 class="subheader"> morph ability &amp; targeting system </h2>
+              <p>
+                The <span class="highlight">morphing ability</span> was the first thing I tackled as it was the <span class="highlight">crux of the game's concept</span>. After finding that Unity’s built-in animation wouldn’t allow me to morph shapes, I <span class="highlight">used Maya to create a blend shape animation to export into Unity</span>, making it to appear as if the alien would <span class="highlight">morph from a sphere into a cube and vice versa during a triggered event.</span>
+              </p>
+
+              <p> In order to trigger the actual morphing, the player had to be able to <span class="highlight">imitate something in the environment</span>. We found that it would be <span class="highlight">too easy</span> for the player to progress if they could <span class="highlight">imitate enemies through playtesting.</span> </p>
+
+              <p> As a result, the morphing ability was <span class="highlight">restricted to special, imitable cube objects</span> that allowed the player to <span class="highlight">morph into a cube shape when clicked</span>. The <span class="highlight">targeting system's UI</span> would let the player know what <span class="highlight">object they were targeting</span> and a circular range around the player would give an <span class="highlight">indication for how close the player has to be to a cube in order to imitate it.</span>
+              </p>
+
+              <span class="spacer"></span>
+
+              <div class="images">
+                <div class="img-col-2"> 
+                  <img src="imgs/beep/morph.gif" alt="alien morphing ability">
+                  <div class="img-caption">| Alien Morphing Ability </div>
+                </div>
+                <div class="img-col-2"> 
+                  <img src="imgs/beep/targeting.gif" alt="targeting system ui">
+                  <div class="img-caption">| Targeting System UI </div>
+                </div>
+              </div>
+
+          </div>
+          <!-- end of content container -->
+
+          <!-- ENEMY AI ///////////////////////////////-->
+
+          <div class="content-container" id="enemy-ai">
+            <h2 class="subheader"> enemy ai </h2>
+              <p>The AI for the cube enemy characters has <span class="highlight">three different states: patrolling the area, suspecting something is amiss, and chasing the player.</span> This AI was <span class="highlight">refined several times</span> over the course of development to <span class="highlight">include different reaction times and behaviours</span> based on where the player was in the enemy's range of sight.</p>
+              <p> If the player managed to sneak up behind the enemy and <span class="highlight">hit them in the back</span>, they would have successfully killed the enemy and be <span class="highlight">left with a corpse</span> that would find use in later levels <span class="highlight">for puzzles</span>.</p>
+              <p>A <span class="highlight">trapezoid enemy</span> was later created by <span class="highlight">adapting the cube enemy’s AI</span>. It essentially has all the same states, but also has an <span class="highlight">added state for sitting down</span>. By hunkering down whenever the player tries to sneak up behind it, the trapezoid enemy <span class="highlight">becomes invulnerable</span> and serves as a <span class="highlight">constant danger</span> to the player.</p>
+
+              <p>Overall, the AI was quite <span class="highlight">challenging to make</span> and required lots of <span class="highlight">playtesting, balancing and refining</span> to make it <span class="highlight">challenging for players but not impossible for them to overcome</span>.
+              </p>
+            <!-- <span class="spacer"></span> -->
+             <div class="images col-full">
+                <div class="img-col-2"> 
+                    <img src="imgs/beep/lvl5.gif" alt="cube enemy chasing player">
+                    <div class="img-caption">| Cube enemy chasing player </div>
+                  </div>
+                  <div class="img-col-2"> 
+                    <img src="imgs/beep/lvl5-2.gif" alt="player killing enemy">
+                    <div class="img-caption">| Player killing enemy </div>
+                  </div>
+              </div>
+          </div>
+          <!-- end of content container -->
+
+          <!-- PUZZLE MECHANICS & OTHER  ///////////////-->
+
+          <div class="content-container" id="puzzle">
+            <h2 class="subheader"> puzzle mechanics &amp; other</h2>
+            
+              <p>There were <span class="highlight">several puzzle mechanics</span> that I <span class="highlight">programmed and attached to objects</span> that the level design team later used when building out the levels. This included <span class="highlight">automated moving platforms</span> and a number of <span class="highlight">different types of doors and switches</span>. I had to <span class="highlight">rework the scripts</span> for moving the doors and platforms several times to <span class="highlight">find a solution for the unstable frame rate and skipped frames that created bugs</span> where a door wouldn't stay open or was eternally being pulled down by gravity. </p>
+              
+              <p>Aside from this, <span class="highlight">other features</span> I coded included the <span class="highlight">animation of the player alien blinking</span> by manually switching through texture images in a script and optimizing the level loading by adding in a <span class="highlight">loading screen</span>. I helped <span class="highlight">debug sound and UI features</span> implemented by the other coder in the team as well.</p>
+
+              <span class="spacer"></span>
+              <div class="images col-full">
+                <div class="img-col-2"> 
+                  <img src="imgs/beep/puzzle-door.gif" alt="puzzle door with randomized switch combination">
+                  <div class="img-caption">| Puzzle door with randomized switch combination </div>
+                </div>
+                <div class="img-col-2"> 
+                  <img src="imgs/beep/loading.gif" alt="loading screen">
+                  <div class="img-caption">| Loading Screen </div>
+                </div>
+              </div>
+           
+          </div>
+          <!-- end of content container -->
+
+      </div>
+    </section>
+
+    <!-- REFLECTION //////////////////////////////////////////////////////// -->
+
+    <section id="reflection">
+      <div class="project-content">
+        <h1> REFLECTION </h1>
+        <p> This was a fun game to make and also a great learning experience as it was the first time I had worked in Unity3D. I had to do a lot of research while implementing, testing, and optimizing features to our needs as they changed throughout development.</p>
+
+         <p>Overall I think we went a bit too crazy with making new levels. We should have narrowed things down to focus on polishing the levels we had instead of creating other levels that didn't get to go through as much playtesting and refinement before the final deadline.</p>
+
+         <p> Playtesting itself is definitely one of the things I found to be most important for the entire game making process. Having more outside testers near the deadline would have helped us pinpoint critical problem areas that needed to be addressed early on. </p>
+      </div>
+
+      <div class="nav-area">
+        <nav class="nav-bar nav-bar-end">
+          <a href="http://gamejolt.com/games/beep/259483" class="button">CHECK OUT THE GAME!</a>
+        </nav>
+      </div>
+    </section>
+
+
+    <!-- Load JS -->
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+
+    <script src="js/nav-handler.js"></script>
+    <script src="js/jquery.scrollify.js"></script>
+    <script src="js/video-formatter.js"></script>
+    
+
+    </body>
+    </html>
+
+    

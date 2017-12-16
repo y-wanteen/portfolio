@@ -1,0 +1,160 @@
+/*icon animation: https://css-tricks.com/svg-line-animation-works/*/
+
+.top-content
+{
+	animation: fadeIn 1s linear 2.8s forwards;
+	cursor:default;
+}
+
+.top-content > .nav-bar > a
+{
+	pointer-events:none;
+	cursor:default;
+
+	animation: changeCursor 1s linear 2.8s forwards;
+}
+
+@keyframes fadeIn
+{
+	0%
+	{
+		opacity:0;
+	}
+
+	100%
+	{
+		opacity:1;
+	}
+}
+
+/*ref: https://css-tricks.com/pointer-events-current-nav/*/
+
+@keyframes changeCursor
+{
+	0%
+	{
+		pointer-events:none;
+		cursor:default;
+	}
+
+	100%
+	{
+		pointer-events:auto;
+		cursor:pointer;
+	}
+}
+
+@keyframes colourChange
+{
+	0%
+	{
+		stroke:#404DA0;
+	}
+
+	100%
+	{
+		stroke:#000000;
+	}
+}
+
+
+.triangle 
+{
+  stroke: #404DA0;
+  stroke-dasharray: 920;
+  stroke-dashoffset: 920;
+  animation: drawTriangle 1.5s ease-in-out forwards,
+  			 colourChange 1s linear 2.75s forwards;
+}
+
+@keyframes drawTriangle 
+{
+  from 
+  {
+    stroke-dashoffset: 920;
+  }
+
+  to
+  {
+    stroke-dashoffset: 0;
+  }
+}
+
+.w-left
+{
+	stroke-dasharray: 145;
+	stroke-dashoffset: 145;
+	animation: draw-W 0.25s ease-in-out 1.5s forwards,
+  			   colourChange 1s linear 2.75s forwards;
+}
+
+.w-right
+{
+	stroke-dasharray: 145;
+	stroke-dashoffset: 145;
+	animation: draw-W 0.25s ease-in-out 1.75s forwards,
+  			   colourChange 1s linear 2.75s forwards;
+}
+
+@keyframes draw-W
+{
+	from
+	{
+		stroke-dashoffset: 145;
+	}
+
+	to
+	{
+		stroke-dashoffset: 0;
+	}
+}
+
+.t-line
+{
+	stroke-dasharray: 255;
+	stroke-dashoffset: 255;
+	animation: draw-T 0.25s ease-in-out 2s forwards,
+  			   colourChange 1s linear 2.75s forwards;
+}
+
+@keyframes draw-T
+{
+	from
+	{
+		stroke-dashoffset: 255;
+	}
+
+	to
+	{
+		stroke-dashoffset: 0;
+	}
+}
+
+.y-left
+{
+	stroke-dasharray: 95;
+	stroke-dashoffset: 95;
+	animation: draw-Y 0.25s ease-in-out 2.25s forwards,
+  			   colourChange 1s linear 2.75s forwards;
+}
+
+.y-right
+{
+	stroke-dasharray: 95;
+	stroke-dashoffset: 95;
+	animation: draw-Y 0.25s ease-in-out 2.5s forwards,
+  			   colourChange 1s linear 2.75s forwards;
+}
+
+@keyframes draw-Y
+{
+	from
+	{
+		stroke-dashoffset: 95;
+	}
+
+	to
+	{
+		stroke-dashoffset: 0;
+	}
+}

@@ -1,0 +1,129 @@
+/* css specific to the styleguide */
+
+/* STYLE GUIDE ////////////////////////////// */
+body.styleguide
+{
+	padding:1.5rem;
+}
+
+code
+{
+	display: inline-block;
+	padding: 0.5rem;
+	background-color: rgb(230, 230, 230);
+}
+
+code span, p span, div.colour-swatch span
+{
+	display:block;
+}
+
+
+.style-item > h1
+{
+	font-family: 'Khula', sans-serif;
+	font-size: 3.5rem;
+	font-weight: 300;
+}
+
+.p01-nav-page
+{
+	padding-bottom: 1rem;
+}
+
+.p01-nav-page a, .p01-nav-page a:visited
+{
+	padding: 0.5rem;
+	text-decoration: none;
+	color:#82AADA;
+}
+
+.p01-nav-page a:hover, .p01-nav-page a:focus
+{
+	color:#3D9BE9;
+	transition: color 0.5s;
+}
+.style-item
+{
+	padding: 0.5rem;
+	padding-bottom: 1.5rem;
+	border-bottom: solid 1px rgb(130, 130, 130);
+	width: 90%;
+
+	position:relative;
+}
+
+.style-item > .nav-bar
+{
+	width:80%;
+}
+
+.style-item > .contact-info
+{
+
+	width:80%;
+	margin-top:250px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+/* COLOUR PALETTE ////////////////////////////// */
+/* colours from portfolio
+	main blue: #82AADA;
+	text header: #404DA0;
+	hover blue: #E0EFFF;
+	?? blue: #3D9BE9;
+	sidebar light blue: #9ED6D1 at 25% opacity
+	subheader blue: #2168B2;
+*/
+
+.colour-swatch
+{
+	padding: 1rem;
+	width: 30%;
+	display: inline-block;
+
+	color: white;
+}
+
+.blue1
+{
+	background-color: #6D7EF2;
+}
+
+.blue2
+{
+	background-color: #404DA0;
+}
+
+.blue3
+{
+	background-color: #82AADA;
+}
+
+.blue4
+{
+	background-color: #A5D6FF;
+}
+
+.blue5
+{
+	background-color: #3D9BE9;
+}
+
+.white
+{
+	background-color:white;
+	color:black;
+}
+
+.grey1
+{
+	background-color:rgb(30, 30, 30);
+}
+
+.grey2
+{
+	background-color:rgb(125, 125, 125);
+}
+
