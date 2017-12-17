@@ -858,6 +858,11 @@ ul, li
 	/*ref: https://css-tricks.com/almanac/properties/b/background-image/*/
 }
 
+.phone-bg
+{
+	background-image: url('../imgs/phone-comparison/phone-cover.jpg');
+}
+
 .beep-bg
 {
 	background-image: url('../imgs/beep/beep-cover.png');
