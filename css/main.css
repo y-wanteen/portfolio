@@ -858,6 +858,11 @@ ul, li
 	/*ref: https://css-tricks.com/almanac/properties/b/background-image/*/
 }
 
+.sleep-on-it-bg
+{
+	background-image: url('../imgs/sleep-on-it/sleep-cover.jpeg');
+}
+
 .phone-bg
 {
 	background-image: url('../imgs/phone-comparison/phone-cover.jpg');
@@ -918,7 +923,7 @@ ul, li
 }
 
 #final-result h1, #concept h1, #programming h1, #reflection h1,
-#programming h2, #modelling h1, #animating h1
+#programming h2, #modelling h1, #animating h1, #coding h1, #database h1
 {
 	padding-left:2rem;
 }
@@ -1012,6 +1017,14 @@ span.label
 {
 	width:80%;
 	padding-left:30%;
+}
+
+#project-overview .nav-area .nav-bar.nav-bar-center
+{
+	width:100%;
+	margin-left:auto;
+	margin-right:auto;
+	padding-left:40%;
 }
 
 #reflection .nav-area .nav-bar
