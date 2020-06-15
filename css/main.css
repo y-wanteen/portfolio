@@ -121,6 +121,8 @@ a, a:visited
  	stroke:#000000;
  	stroke-width:6;
  	stroke-miterlimit:10;
+
+	transition: stroke 0.25s ease-in-out;
  }
 
  .icon-line-animate
@@ -132,6 +134,7 @@ a, a:visited
  }
 
 
+
 /* FIXED HEADER NAV-BAR /////////////////////////////////////// */
 
 .header-bar
@@ -140,14 +143,16 @@ a, a:visited
 	position:fixed;
 	top:0;
 
-	background-color: rgb(255, 255, 255);
+	background-color: rgba(255, 255, 255, 1);
 
 	padding-top:0.6rem;
 	padding-bottom:0.6rem;
 
 	opacity:1;
 	display:none;
+	/*visibility: hidden;*/
 
+	transition: background-color 0.25s ease-in-out;
 	/*border: solid 1px green;*/
 }
 
@@ -176,6 +181,7 @@ a, a:visited
 	font-size: 1.8rem;
 	font-weight: 300;
 
+	transition: color 0.25s ease-in-out;
 
 }
 
@@ -219,6 +225,25 @@ a, a:visited
 
 	display:inline-block;
 }
+
+/* PROJECT PAGE TOP NAV BAR APPEARANCE ////////*/
+
+.page-top
+{
+	background-color:rgba(255, 255, 255, 0);
+}
+
+h1.page-top-text
+{
+	color: white;
+}
+
+.page-top-icon
+{
+ 	stroke: white;
+
+}
+
 
 /* INDEX PAGE SECTIONS /////////////////////////////////////// */
 

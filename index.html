@@ -25,7 +25,7 @@
     <section class="header-bar" id="header">
 
       <div class="header-content-left">
-        <a href="#top"  onclick="$.scrollify.move('#top')">
+        <a href="#top" onclick="scrollToTop()">
         <div class="header-initial-icon">
           <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
           viewBox="0 0 350 350" style="enable-background:new 0 0 350 350;" xml:space="preserve">
@@ -44,9 +44,9 @@
 
       <!-- navigation  -->
       <nav class="nav-bar">
-          <a class="button" id="fixedNavProj" href="#projects" onclick="$.scrollify.move('#projects')">PROJECTS</a>
-          <a class="button" id="fixedNavAbout" href="#about" onclick="$.scrollify.move('#about')">ABOUT</a>
-          <a class="button" id="fixedNavContact" href="#contact" onclick="$.scrollify.move('#contact')">CONTACT</a>
+          <a class="button" id="fixedNavProj" href="#projects" onclick="scrollToSection('projects-section')">PROJECTS</a>
+          <a class="button" id="fixedNavAbout" href="#about" onclick="scrollToSection('about-section')">ABOUT</a>
+          <a class="button" id="fixedNavContact" href="#contact" onclick="scrollToSection('contact-section')">CONTACT</a>
       </nav>
 
     </section>
@@ -78,19 +78,19 @@
         <div class="top-content">
 
           <h1> WAN-TEEN YANG </h1>
-          <p> &lt; game/web developer + programmer &gt; </p>
+          <p> &lt; game/vr developer + programmer &gt; </p>
 
           <nav class="nav-bar">
-            <a href="#projects" class="button" onclick="$.scrollify.move('#projects')">PROJECTS</a>
-            <a href="#about" class="button" onclick="$.scrollify.move('#about')">ABOUT</a>
-            <a href="#contact" class="button" onclick="$.scrollify.move('#contact')">CONTACT</a>
+            <a href="#projects" class="button" onclick="scrollToSection('projects-section')">PROJECTS</a>
+            <a href="#about" class="button" onclick="scrollToSection('about-section')">ABOUT</a>
+            <a href="#contact" class="button" onclick="scrollToSection('contact-section')">CONTACT</a>
           </nav>
         </div>
 
     </section>
 
     <!-- PROJECTS SECTION ////////////////////////////////////////////////////// -->
-    <section id="projects-section" data-section-name="projects" class="section edge--both"> 
+    <section id="projects-section" class="section edge--both"> 
       <div class="index-section-content">
         <h2> PROJECTS </h2>
         <div class="content-container">
@@ -142,14 +142,6 @@
               </div>
               </a>
             </div>
-
-<!--             <div class="content-block project-item">
-              <a href="#projects">
-                <div class="project-img">
-              <img src="imgs/more.png" alt="more" draggable="false">
-            </div>
-              </a>
-            </div> -->
           
           </div> <!-- end of content container -->
 
@@ -161,21 +153,19 @@
 
     <section id="about-section" data-section-name="about" class="section edge--both--reverse">
       <div class="index-section-content">
-        <h2> ABOUT </h2>
+        <h2> Hi! </h2>
 
         <p class="bio">
-          Hi! I'm Wan-Teen (but you probably know that already).
+          I'm Wan-Teen, a graduate from Simon Fraser University's School of Interactive Arts &amp; Technology with a passion for designing and developing cool games and experiences both in and out of virtual reality. As both a programmer and an artist, I strive to use my skills to create projects that delight players through exciting mechanics and charming aesthetics.
 
           <span class="spacer"></span>
-
-          I'm currently a student in Simon Fraser University's School of Interactive Arts &amp; Technology with an interest in creating cool games and websites. As both a programmer and an artist, I aim to use my skills to create projects that are visually and functionally appealing.
-
+          
+          I've recently discovered the little joys of spicing up text blobs with the occasional context relevant emoji. 🌶️
+          
           <span class="spacer"></span>
+          
+          Most of my spare time is dedicated to birdwatching with a camera in hand, or exploring and experiencing different worlds and walks of life in games such as the Legend of Zelda and Persona 5. I also greatly enjoy building bonds with friends and family through the chaotic fun of duking it out in Smash Bros or cooking up a storm in Overcooked.
 
-           In my spare time I love to explore and admire the vast and beautiful worlds of games such as Legend of Zelda. I also take great pleasure in speeding past bitter friends with Yoshi in Mario Kart and duking it out in Smash Bros. 
-
-          <!-- <span class="spacer"></span> -->
-          <!-- As a result of numerous hours spent honing my skills in Mario Kart long ago, I’ve managed to earn the nickname “Yoshi” from several bitter friends who I've beaten with the aforementioned character. -->
         </p>
 
         <div class="about-img">
@@ -197,7 +187,7 @@
           <div class="nav-bar">
 
             <div class="button no-bracket">
-              <a href="mailto:wanteeny@sfu.ca">
+              <a href="mailto:wanteen.y@gmail.com">
               <div class="contact-icon-container">
                 <div class="triangle"></div>
                 <div class="contact-icon">
@@ -210,15 +200,15 @@
                   </svg>
                 </div>
               </div>
-              wanteeny@sfu.ca</a>
+              wanteen.y@gmail.com</a>
             </div>
 
             <div class="button no-bracket">
-              <a href="files/Resume_Wan-TeenYang.pdf" target="_blank">
+              <a href="#" onClick="return false;">
               <div class="contact-icon-container">
                 <div class="triangle"></div>
                 <div class="contact-icon">
-                  <svg version="1.1" id="Layer_5" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  <svg version="1.1" id="Layer_5" xmlsnlinkedin="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                   viewBox="0 0 300 300" style="enable-background:new 0 0 300 300;" xml:space="preserve">
                     <g>
                       <polyline class="contact-icon-stroke" points="122.6,41.1 232.5,41.1 232.5,258.9 67.5,258.9 67.5,96.2  "/>
@@ -232,7 +222,29 @@
                   </svg>
                 </div>
               </div>              
-              resume</a>
+              Resume @ request</a>
+            </div>
+
+            <div class="button no-bracket">
+              <a href="https://www.linkedin.com/in/wanteen-y" target="_blank">
+              <div class="contact-icon-container">
+                <div class="triangle"></div>
+                <div class="contact-icon">
+                  <svg version="1.1" id="Layer_5" xmlsnlinkedin="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  viewBox="0 0 300 300" style="enable-background:new 0 0 300 300;" xml:space="preserve">
+                    <g>
+                      <polyline class="contact-icon-stroke" points="122.6,41.1 232.5,41.1 232.5,258.9 67.5,258.9 67.5,96.2  "/>
+                      <polygon class="contact-icon-stroke" points="122.6,96.2 67.5,96.2 95,68.6 122.6,41.1  "/>
+                      <line class="contact-icon-stroke" x1="152" y1="142.5" x2="204.4" y2="142.5"/>
+                      <line class="contact-icon-stroke" x1="152" y1="167.2" x2="204.4" y2="167.2"/>
+                      <line class="contact-icon-stroke" x1="152" y1="191.2" x2="204.4" y2="191.2"/>
+                      <circle class="contact-icon-stroke" cx="113.1" cy="148.8" r="17.2"/>
+                      <path class="contact-icon-stroke" d="M89.2,197.1c0-14.1,10.7-31.1,23.9-31.1s23.9,17,23.9,31.1H89.2z"/>
+                    </g>
+                  </svg>
+                </div>
+              </div>              
+              LinkedIn</a>
             </div>
 
           </div>
@@ -249,7 +261,6 @@
     <script src="js/jquery-ui.min.js"></script>
 
     <script src="js/nav-handler.js"></script>
-    <script src="js/jquery.scrollify.js"></script>
 
     </body>
 </html>
