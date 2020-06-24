@@ -1,8 +1,13 @@
 /*icon animation: https://css-tricks.com/svg-line-animation-works/*/
 
+/* Main Logo -----------------------------*/
+
 .top-content
 {
-	animation: fadeIn 1s linear 2.8s forwards;
+	-webkit-animation: fadeIn 0.5s linear 3.3s forwards;
+	-moz-animation: fadeIn 0.5s linear 3.3s forwards;
+	animation: fadeIn 0.5s linear 3.3s forwards;
+	
 	cursor:default;
 }
 
@@ -11,7 +16,9 @@
 	pointer-events:none;
 	cursor:default;
 
-	animation: changeCursor 1s linear 2.8s forwards;
+	-webkit-animation: changeCursor 0.5s linear 2.7s forwards;
+	-moz-animation: changeCursor 0.5s linear 2.7s forwards;
+	animation: changeCursor 0.5s linear 2.7s forwards;
 }
 
 @keyframes fadeIn
@@ -28,6 +35,58 @@
 }
 
 /*ref: https://css-tricks.com/pointer-events-current-nav/*/
+
+.icon
+{
+	-webkit-animation: expand 3.5s ease-in-out;
+	-moz-animation: expand 3.5s ease-in-out;
+	animation: expand 3.5s ease-in-out;
+	
+	-webkit-transition: transform 1.5s ease-in-out;
+	-moz-transition: transform 1.5s ease-in-out;
+	transition: transform 1.5s ease-in-out;
+
+
+}
+
+.icon:hover
+{
+	-webkit-transform: rotateY(180deg);
+	-moz-transform: rotateY(180deg);
+	transform: rotateY(180deg);
+	
+	-webkit-transition: transform 1.5s ease-in-out;
+	-moz-transition: transform 1.5s ease-in-out;
+	transition: transform 1.5s ease-in-out;
+}
+
+@keyframes expand 
+{
+	0% 
+	{
+		transform: scale(1);
+	}
+
+	90% 
+	{
+		transform: scale(0.9);
+	}
+
+	95% 
+	{
+		transform: scale(1.25);
+	}
+
+	98% 
+	{
+		transform: scale(0.75);
+	}
+
+	100%
+	{
+		transform: scale(1);
+	}
+}
 
 @keyframes changeCursor
 {
@@ -57,12 +116,15 @@
 	}
 }
 
-
-.triangle 
+.triangle
 {
   stroke: #404DA0;
   stroke-dasharray: 920;
   stroke-dashoffset: 920;
+  -webkit-animation: drawTriangle 1.5s ease-in-out forwards,
+  			 colourChange 1s linear 2.75s forwards;
+  -moz-animation: drawTriangle 1.5s ease-in-out forwards,
+  			 colourChange 1s linear 2.75s forwards;
   animation: drawTriangle 1.5s ease-in-out forwards,
   			 colourChange 1s linear 2.75s forwards;
 }
@@ -84,7 +146,11 @@
 {
 	stroke-dasharray: 145;
 	stroke-dashoffset: 145;
-	animation: draw-W 0.25s ease-in-out 1.5s forwards,
+	-webkit-animation: draw-W 0.25s ease-in-out 1.5s forwards,
+  			   colourChange 1s linear 2.75s forwards;
+  	-moz-animation: draw-W 0.25s ease-in-out 1.5s forwards,
+  			   colourChange 1s linear 2.75s forwards;
+  	animation: draw-W 0.25s ease-in-out 1.5s forwards,
   			   colourChange 1s linear 2.75s forwards;
 }
 
@@ -158,3 +224,5 @@
 		stroke-dashoffset: 0;
 	}
 }
+
+
