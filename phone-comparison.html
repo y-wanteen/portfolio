@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang ="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name=viewport content="width=device-width, initial-scale=1">
+
+    <title>Phone Comparison // Web Development</title>
+
+    <link rel="shortcut icon" type="image/x-icon" href="imgs/favicon.ico">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/grid.css" rel="stylesheet">
+    <!-- normalize css from https://necolas.github.io/normalize.css/ -->
+    <link href="css/normalize.css" rel="stylesheet"> 
+    <link href="css/angled-edges.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <!-- FIXED HEADER NAVIGATION BAR /////////////////////////////////// -->
+    <section class="header-bar project-page-nav page-top">
+
+      <div class="header-content-left">
+        <a href="index.html">
+        <div class="header-initial-icon">
+          <svg version="1.1" id="Layer_4" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          viewBox="0 0 350 350" style="enable-background:new 0 0 350 350;" xml:space="preserve">
+          <line class="icon-line" x1="178.1" y1="62" x2="178.1" y2="316.6"/>
+          <line class="icon-line" x1="178.1" y1="62" x2="92.8" y2="177.7"/>
+          <line class="icon-line" x1="263.6" y1="176.8" x2="178.1" y2="62"/>
+          <line class="icon-line" x1="120.6" y1="139.3" x2="178.1" y2="214.3"/>
+          <line class="icon-line" x1="178.1" y1="214.3" x2="237" y2="141.2"/>
+          <polygon class="icon-line" points="21.8,62 334.4,62 178.1,320.3 "/>
+          </svg>
+        </div>
+        <h1> WAN-TEEN YANG </h1>
+        </a>
+      </div>
+
+      <!-- navigation  -->
+      <nav class="nav-bar project-nav ">
+        <a class="button project-nav-button" id="fixedNavProj" href="index.html#projects">RETURN TO PROJECTS</a>
+      </nav>
+
+    </section>
+
+    <!-- PROJECT TOP //////////////////////////////////////////////////////// -->
+
+    <section id="project-top" class="phone-bg">
+      <div class="bg-overlay"></div>
+      <div class="project-content">
+        <h1> Phone Comparison </h1>
+      </div>
+    </section>
+
+    <section id="project-overview">
+      <div class="project-overview-content">
+
+        <h2 class="subheader"> OVERVIEW </h2>
+        <div class="overview">
+          <p> Phone Comparison is a website for comparing fundamental smartphone specifications for people who are looking to purchase a new phone and those who are not particularly well-versed in technical jargon regarding smartphones. The site uses PHP and an Apache web server for the back-end with a MySQL database while the front-end was coded with HTML, CSS and JavaScript. </p>
+        </div>
+
+        <div class="overview-breakdown">
+          <p>
+            <span class="label">SKILLS:</span>
+            Ideation, coding, debugging
+          </p>
+          <p>
+            <span class="label">TOOLS:</span>
+            Sublime Text Editor, XAMPP, phpMyAdmin
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FINAL RESULT //////////////////////////////////////////////////////// -->   
+
+    <section id="final-result">
+      <div class="project-content">
+        <h1> FINAL </h1>
+
+        <span class="spacer"></span>
+            
+          <div class="images">
+            <div class="img-col-2"> 
+              <img src="imgs/phone-comparison/index.png" alt="index">
+              <div class="img-caption">| Index page</div>
+            </div>
+            <div class="img-col-2"> 
+              <img src="imgs/phone-comparison/register-login.png" alt="register/login">
+              <div class="img-caption">| Register/Login to account</div>
+            </div>
+          </div>
+
+          <div class="images">
+            <div class="img-col-2"> 
+              <img src="imgs/phone-comparison/browse.gif" alt="browse content">
+              <div class="img-caption">| Browsing and filtering website content</div>
+            </div>
+            <div class="img-col-2"> 
+              <img src="imgs/phone-comparison/compare.gif" alt="compare phones">
+              <div class="img-caption">| Comparing two different phones </div>
+            </div>
+          </div>
+       
+      </div>
+    </section>
+
+    <!-- CONCEPT //////////////////////////////////////////////////////// -->
+
+    <section id="concept">
+      <div class="project-content">
+          <h1> CONCEPT DEVELOPMENT</h1>
+          <p>
+            For this project, I had to design a website that would make use of a <span class="highlight">database containing content that users could view and filter through</span>. I decided to create a site that would <span class="highlight">allow users to compare phones and their specifications</span> when searching for a new device. Existing websites such as GSMArena that have a database of smartphones go into very <span class="highlight">specific details</span> for each device and <span class="highlight">use jargon that can be confusing</span> for those who aren't tech savvy. </p>
+
+          <p> I wanted to create a similar site, but <span class="highlight">simplify the information and break it down into some of the most basic specifications and features</span> that people tend to look at when considering their smartphone options. By narrowing down significant details of each phone, it will be easier for users who are unfamiliar with technical jargon to <span class="highlight">learn</span> about some basic specs people tend to look at (eg. random access memory) and also <span class="highlight">aid</span> them in finding a device that fits their needs.
+          </p>
+        </div>
+    </section>
+
+    <!-- DATABASE CREATION //////////////////////////////////////////////////////// -->
+
+    <section id="database">
+      <div class="project-content">
+          <h1>DATABASE CREATION</h1>
+          <p> Information on registered members and 31 different phones is stored and retrieved from a <span class="highlight">MySQL database using SQL queries</span>. The database consists of 5 different tables: comments, member login information, member preferences, basic phone information (eg. name, manufacturer), and phone specifications (eg. screen size, battery capacity).
+          </p>
+      </div>
+    </section>
+
+    <!-- CODING //////////////////////////////////////////////////////// -->
+
+    <section id="programming">
+      <div class="project-content">
+          <h1>PROGRAMMING</h1>
+          <p> The coding of the website was split into 3 parts. First was the overall front-end design using <span class="highlight">HTML, CSS, and the Bootstrap framework</span>. This was followed by the <span class="highlight">creation and implementation of the database and content filtering</span>, and implemented last was the user registration, login and preference saving as well as dynamically updating content on specific pages using <span class="highlight">AJAX and JavaScript</span>. 
+          </p>
+
+          <span class="spacer"></span>
+            
+          <div class="images">
+            <div class="img-col-1"> 
+              <img src="imgs/phone-comparison/code-html.png" alt="html">
+              <div class="img-caption">| Snippet of HTML code</div>
+            </div>
+          </div>
+          <div class="images">
+            <div class="img-col-1"> 
+              <img src="imgs/phone-comparison/code-php.png" alt="php">
+              <div class="img-caption">| Snippet of PHP code for filtering content </div>
+            </div>
+          </div>
+      </div>
+    </section>
+
+    <!-- REFLECTION //////////////////////////////////////////////////////// -->
+
+    <section id="reflection">
+      <div class="project-content">
+        <h1> REFLECTION </h1>
+        <p> The completed website has 6 main pages that users can access through the navigation: index, browse, specifications information, compare, registration/login and account. Users can browse the site's database of smartphones to stay updated on phones released in recent years and can also compare and contrast the basic specifications of each phone on the website with the compare feature. </p>
+        <p> This project taught me a lot about back-end aspects of web design and development. In particular I found that database design was quite complex and involves much consideration on the relations between tables and how data would be stored and accessed. For example, the basic phone information and phone specifications tables have to share a key column in order to write out a SQL statement that will access information about a specific phone from both tables. If the tables don't have proper relations with each other, it becomes difficult to write out an appropriate SQL query. Previously I also had very little knowledge about AJAX and dynamically updated content, so this project allowed me to broaden my skills and knowledge with regards to both front-end and back-end web development.</p>
+      </div>
+
+      <div class="nav-area">
+        <nav class="nav-bar nav-bar-end">
+          <a href="#" class="button">BACK TO TOP</a>
+        </nav>
+      </div>
+    </section>
+
+
+    <!-- Load JS -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+
+    <script src="js/nav-page-handler.js"></script>
+    <script src="js/video-formatter.js"></script>
+
+    </body>
+    </html>
+
+    

@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang ="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name=viewport content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+
+    <title>wan-teen yang</title>
+
+    <link rel="shortcut icon" type="image/x-icon" href="imgs/favicon.ico">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/grid.css" rel="stylesheet">
+    <link href="css/icon-animate.css" rel="stylesheet">
+
+    <!-- normalize css from https://necolas.github.io/normalize.css/ -->
+    <link href="css/normalize.css" rel="stylesheet"> 
+    <link href="css/angled-edges.css" rel="stylesheet">
+  </head>
+
+  <body id="index" data-spy="scroll" data-target=".navbar">
+
+    <!-- FIXED HEADER NAVIGATION BAR /////////////////////////////////// -->
+    <section class="header-bar" id="header">
+
+      <div class="header-content-left">
+        <a href="#top" onclick="scrollToTop()">
+        <div class="header-initial-icon">
+          <svg id="header-icon" data-name="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+              <polygon class="icon-line" points="25 50.23 275 50.23 275 50.23 150 249.76"/>
+              <!-- W -->
+              <line class="icon-line" x1="81.31" y1="140.78" x2="150.1" y2="50.24"/>
+              <line class="icon-line" x1="149.9" y1="50.24" x2="218.69" y2="140.78"/>
+              <!-- T -->
+              <line class="icon-line" x1="150" y1="50.24" x2="150" y2="249.34"/>
+              <!--Y-->
+              <line class="icon-line" x1="101.83" y1="112.04" x2="150.07" y2="169.53" />
+              <line class="icon-line" x1="149.93" y1="169.53" x2="198.17" y2="112.04" />
+          </svg>
+        </div>
+
+        <h1> WAN-TEEN YANG </h1>
+        </a>
+      </div>
+
+      <!-- navigation  -->
+      <nav class="nav-bar">
+          <a class="button" id="fixedNavProj" href="#projects" onclick="scrollToSection('projects-section')">PROJECTS</a>
+          <a class="button" id="fixedNavAbout" href="#about" onclick="scrollToSection('about-section')">ABOUT</a>
+          <a class="button" id="fixedNavContact" href="#contact" onclick="scrollToSection('contact-section')">CONTACT</a>
+      </nav>
+
+    </section>
+
+    <!-- TOP SECTION //////////////////////////////////////////////////////////  -->
+    <section id="top-section" data-section-name="top" class="section"> 
+        <div class="initial-icon">
+          <svg class="icon" id="icon" data-name="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+              <polygon class="icon-line-animate triangle" points="25 50.23 275 50.23 275 50.23 150 249.76"/>
+              <!-- W -->
+              <line class="icon-line-animate w-left" x1="81.31" y1="140.78" x2="150.1" y2="50.24"/>
+              <line class="icon-line-animate w-right" x1="149.9" y1="50.24" x2="218.69" y2="140.78"/>
+              <!-- T -->
+              <line class="icon-line-animate t-line" x1="150" y1="50.24" x2="150" y2="249.34"/>
+              <!--Y-->
+              <line class="icon-line-animate y-left" x1="101.83" y1="112.04" x2="150.07" y2="169.53" />
+              <line class="icon-line-animate y-right" x1="149.93" y1="169.53" x2="198.17" y2="112.04" />
+          </svg>
+        </div>
+
+        <div class="top-content">
+
+          <h1> WAN-TEEN YANG </h1>
+          <p> &lt; game/vr developer + programmer &gt; </p>
+
+          <nav class="nav-bar">
+            <a href="#projects" class="button" onclick="scrollToSection('projects-section')">PROJECTS</a>
+            <a href="#about" class="button" onclick="scrollToSection('about-section')">ABOUT</a>
+            <a href="#contact" class="button" onclick="scrollToSection('contact-section')">CONTACT</a>
+          </nav>
+        </div>
+
+    </section>
+
+    <!-- PROJECTS SECTION ////////////////////////////////////////////////////// -->
+    <section id="projects-section" class="section edge--both"> 
+      <div class="index-section-content">
+        <h2> PROJECTS </h2>
+        <div class="content-container">
+
+            <div class="content-block project-item">
+              <a href="amorphous.html">
+                <div class="project-img">
+                  <img src="imgs/project-icons/amorphous-icon.png" alt="amorphous" draggable="false">
+                </div>
+              <div class="content-info-overlay">
+                <p class="paragraph-head"> AMORPHOUS </p>
+                <p class="paragraph"> 3d animated short </p>
+              </div>
+              </a>
+            </div>
+            
+            <div class="content-block project-item">
+              <a href="beep.html">
+              <div class="project-img">
+                <img src="imgs/project-icons/beep-icon.jpg" alt="beep" draggable="false">
+              </div>
+              <div class="content-info-overlay">
+                <p class="paragraph-head"> BEEP </p>
+                <p class="paragraph"> game development </p>
+              </div>
+              </a>
+            </div>
+
+            <div class="content-block project-item">
+              <a href="phone-comparison.html">
+              <div class="project-img">
+                <img src="imgs/project-icons/phone-icon.jpg" alt="phone-comparison" draggable="false">
+              </div>
+              <div class="content-info-overlay">
+                <p class="paragraph-head"> PHONE COMPARISON </p>
+                <p class="paragraph"> web development </p>
+              </div>
+              </a>
+            </div>
+
+            <div class="content-block project-item">
+              <a href="sleep-on-it.html">
+              <div class="project-img">
+                <img src="imgs/project-icons/sleep-icon.png" alt="sleep-on-it" draggable="false">
+              </div>
+              <div class="content-info-overlay">
+                <p class="paragraph-head"> SLEEP ON IT </p>
+                <p class="paragraph"> app development </p>
+              </div>
+              </a>
+            </div>
+          
+          </div> <!-- end of content container -->
+
+      </div> 
+      <!-- end of index section content -->
+    </section>
+
+    <!-- ABOUT SECTION ////////////////////////////////////////////////////// -->
+
+    <section id="about-section" data-section-name="about" class="section edge--both--reverse">
+      <div class="index-section-content">
+        <h2> Hi! </h2>
+
+        <p class="bio">
+          I'm Wan-Teen, a graduate from Simon Fraser University's School of Interactive Arts &amp; Technology with a passion for designing and developing cool games and experiences both in and out of virtual reality. As both a programmer and an artist, I strive to use my skills to create projects that delight players through exciting mechanics and charming aesthetics.
+
+          <span class="spacer"></span>
+          
+          I've recently discovered the little joys of spicing up text blobs with the occasional context relevant emoji. 🌶️
+          
+          <span class="spacer"></span>
+          
+          Most of my spare time is dedicated to birdwatching with a camera in hand, or exploring and experiencing different worlds and walks of life in games such as the Legend of Zelda and Persona 5. I also greatly enjoy building bonds with friends and family through the chaotic fun of duking it out in Smash Bros or cooking up a storm in Overcooked.
+
+        </p>
+
+        <div class="about-img">
+          <img src="imgs/about-v0.png" alt="about" draggable="false">
+        </div>
+      </div>
+      <!-- end of index section content -->
+    </section>
+
+    <!-- CONTACT SECTION ////////////////////////////////////////////////////// -->
+
+    <section id="contact-section" data-section-name="contact" class="section edge--both">
+      <div class="index-section-content">
+        <h2> CONTACT </h2>
+
+        <div class="contact-info">
+
+         <!-- navigation  -->
+          <div class="nav-bar">
+            
+            <div class="button no-bracket">
+              <a href="#" onClick="return false;">
+              <div class="contact-icon-container">
+                <div class="triangle"></div>
+                <div class="contact-icon">
+                  <svg version="1.1" id="Layer_5" xmlsnlinkedin="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  viewBox="0 0 300 300" style="enable-background:new 0 0 300 300;" xml:space="preserve">
+                    <g>
+                      <polyline class="contact-icon-stroke" points="122.6,41.1 232.5,41.1 232.5,258.9 67.5,258.9 67.5,96.2  "/>
+                      <polygon class="contact-icon-stroke" points="122.6,96.2 67.5,96.2 95,68.6 122.6,41.1  "/>
+                      <line class="contact-icon-stroke" x1="152" y1="142.5" x2="204.4" y2="142.5"/>
+                      <line class="contact-icon-stroke" x1="152" y1="167.2" x2="204.4" y2="167.2"/>
+                      <line class="contact-icon-stroke" x1="152" y1="191.2" x2="204.4" y2="191.2"/>
+                      <circle class="contact-icon-stroke" cx="113.1" cy="148.8" r="17.2"/>
+                      <path class="contact-icon-stroke" d="M89.2,197.1c0-14.1,10.7-31.1,23.9-31.1s23.9,17,23.9,31.1H89.2z"/>
+                    </g>
+                  </svg>
+                </div>
+              </div>              
+              Resume @ request</a>
+            </div>
+
+            <div class="button no-bracket">
+              <a href="https://www.linkedin.com/in/wanteen-y" target="_blank">
+              <div class="contact-icon-container">
+                <div class="triangle"></div>
+                <div class="contact-icon">
+                  <img src="imgs/icons/linkedin-64.png" alt="linkedin">
+                  </svg>
+                </div>
+              </div>              
+              LinkedIn</a>
+            </div>
+
+          </div>
+          <!-- end of navbar -->
+        </div>
+        <!-- end of contact info -->
+
+       </div>
+      <!-- end of index section content -->
+    </section>
+
+    <!-- Load JS -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+
+    <script src="js/nav-handler.js"></script>
+
+    </body>
+</html>
+
+    

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang ="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name=viewport content="width=device-width, initial-scale=1">
+
+    <title>Amorphous // 3D Animation</title>
+
+    <link rel="shortcut icon" type="image/x-icon" href="imgs/favicon.ico">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/grid.css" rel="stylesheet">
+    <!-- normalize css from https://necolas.github.io/normalize.css/ -->
+    <link href="css/normalize.css" rel="stylesheet"> 
+    <link href="css/angled-edges.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+   <!-- FIXED HEADER NAVIGATION BAR /////////////////////////////////// -->
+    <section class="header-bar project-page-nav page-top">
+
+      <div class="header-content-left">
+        <a href="index.html">
+        <div class="header-initial-icon">
+          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          viewBox="0 0 350 350" style="enable-background:new 0 0 350 350;" xml:space="preserve">
+          <line class="icon-line page-top-icon" x1="178.1" y1="62" x2="178.1" y2="316.6"/>
+          <line class="icon-line page-top-icon" x1="178.1" y1="62" x2="92.8" y2="177.7"/>
+          <line class="icon-line page-top-icon" x1="263.6" y1="176.8" x2="178.1" y2="62"/>
+          <line class="icon-line page-top-icon" x1="120.6" y1="139.3" x2="178.1" y2="214.3"/>
+          <line class="icon-line page-top-icon" x1="178.1" y1="214.3" x2="237" y2="141.2"/>
+          <polygon class="icon-line page-top-icon" points="21.8,62 334.4,62 178.1,320.3 "/>
+          </svg>
+        </div>
+
+        <h1 class="page-top-text"> WAN-TEEN YANG </h1>
+        </a>
+      </div>
+
+      <!-- navigation  -->
+      <nav class="nav-bar project-nav">
+        <a class="button project-nav-button" id="fixedNavProj" href="index.html#projects-section">RETURN TO PROJECTS</a>
+      </nav>
+
+    </section>
+
+    <!-- PROJECT TOP //////////////////////////////////////////////////////// -->
+
+    <section id="project-top" class="amorphous-bg">
+      <div class="bg-overlay"></div>
+      <div class="project-content">
+        <h1> AMORPHOUS </h1>
+      </div>
+    </section>
+
+    <section id="project-overview">
+      <div class="project-overview-content">
+
+        <h2 class="subheader"> OVERVIEW </h2>
+        <div class="overview">
+          <p> Amorphous is a short narrative animation about an astronaut who meets an alien cat on an extraterrestrial planet. The 3 minute animation is done in a low-poly style using Autodesk Maya for the modelling and animation, and Adobe AfterEffects and Adobe Premiere Pro for post-production. 
+          </p>
+          </div>
+
+        <div class="overview-breakdown">
+          <p>
+            <span class="label">TASKS:</span>
+            Environment design, modelling, animation
+          </p>
+          <p>
+            <span class="label">TOOLS:</span>
+            Autodesk Maya, Adobe Photoshop
+          </p>
+          <p>
+            <span class="label">TEAM:</span>
+            Nancy Chen, Danielle Ragas, Josephine Ryu
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FINAL RESULT //////////////////////////////////////////////////////// -->   
+
+    <section id="final-result">
+      <div class="project-content">
+        <h1> FINAL VIDEO </h1>
+        <div class="video">
+          <figure>
+            <iframe src="https://player.vimeo.com/video/162523399?title=0&amp;byline=0&amp;portrait=0" width="640" height="360" allowfullscreen></iframe>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONCEPT //////////////////////////////////////////////////////// -->
+
+    <section id="concept">
+      <div class="project-content">
+          <h1> CONCEPT DEVELOPMENT</h1>
+          <p>
+            Each member in my team came up with different ideas for the concept and plot of our animation before we settled on the <span class="highlight">space theme</span>. While my teammates focused more on the overall plot development and character design, I worked on <span class="highlight">sketching the initial concept art</span> for the numerous environments we planned on having the characters trek through.
+          </p>
+
+          <span class="spacer"></span>
+
+          <div class="images">
+            <div class="img-col-3">
+              <img src="imgs/amorphous/concept01.jpg" alt="grassland concept art">
+              <div class="img-caption">| Grassland Concept</div>
+            </div>
+            <div class="img-col-3">
+              <img src="imgs/amorphous/concept02.jpg" alt="forest concept art">
+              <div class="img-caption">| Forest Concept</div>
+            </div>
+            <div class="img-col-3">
+              <img src="imgs/amorphous/concept03.jpg" alt="space station ruins concept art">
+             <div class="img-caption"> | Space Station Concept</div>
+           </div>
+          </div>
+        </div>
+    </section>
+
+    <!-- MODELLING //////////////////////////////////////////////////////// -->
+
+    <section id="modelling">
+      <div class="project-content">
+          <h1>MODELLING</h1>
+          <p> We eventually decided on <span class="highlight">four different environments</span> to use and <span class="highlight">assigned one to each member</span> to create. I was responsible for modelling the <span class="highlight">cave environment</span>. I spent copious amounts of time on the <span class="highlight">crystals in the cave</span> – not only on modelling and positioning them in the environment, but also on <span class="highlight">experimenting with different render materials</span>. We wanted the crystals to have an <span class="highlight">opaque, reflective surface</span> that also had <span class="highlight">highlights and colour gradation</span>. This was an effect that <span class="highlight">could not be achieved with a single material or render passing</span> that the other environments could get away with.</p>
+          <p>I eventually discovered that the desired crystal material could be <span class="highlight">created by compositing different render passes</span>. One layer used Maya's default <span class="highlight">lambert material for the opaque quality</span> while another had <span class="highlight">highlights and reflections from a glass material</span>. Furthermore, by using the <span class="highlight">ambient occlusion</span> rendering technique, <span class="highlight">better shading and depth</span> could be added to the overall environment.
+          </p>
+
+          <span class="spacer"></span>
+
+          <div class="images">
+            <img class="img-col-1" src="imgs/amorphous/amorphous-compositing-processv2.png" alt="compositing process">
+            <div class="img-caption">| Render Pass Compositing Process (1:42)</div>
+          </div>
+
+      </div>
+    </section>
+
+    <!-- ANIMATING //////////////////////////////////////////////////////// -->
+
+    <section id="animating">
+      <div class="project-content">
+          <h1>ANIMATING</h1>
+          <p> Since I <span class="highlight">modelled the cave scene (1:29-2:15)</span>, I was also <span class="highlight">responsible for animating</span> it. This scene had around <span class="highlight">20 different shots</span> which was far more than the other scenes. The process was greatly sped up thanks to another teammate that animated the character walk and run cycles.
+          </p>
+
+          <span class="spacer"></span>
+            
+          <div class="images">
+            <div class="img-col-2"> 
+              <img src="imgs/amorphous/run01.gif" alt="running sequence side view">
+              <div class="img-caption">| Running Sequence - Side View (1:45-1:47)</div>
+            </div>
+            <div class="img-col-2"> 
+              <img src="imgs/amorphous/run02.gif" alt="running sequence top view">
+              <div class="img-caption">| Running Sequence - Top View (1:49-1:51) </div>
+            </div>
+          </div>
+      </div>
+    </section>
+
+    <!-- REFLECTION //////////////////////////////////////////////////////// -->
+
+    <section id="reflection" class="white-bg">
+      <div class="project-content">
+        <h1> REFLECTION </h1>
+        <p> This was the first time any of us worked in Maya and was a great learning experience for us. As we progressed through the project, we allocated tasks such as rigging the character models and animating walk cycles to teammates that were more comfortable and proficient at doing so. In the end, we were able to bring to life a story containing with the major narrative beats and quirky characters we envisioned. </p>
+        <p> Working on this project also gave me more insight into 3D modelling overall and how assets for 3D games are modelled, textured, rigged, and animated.</p>
+      </div>
+
+      <div class="nav-area">
+        <nav class="nav-bar nav-bar-end">
+          <a href="#" class="button">BACK TO TOP</a>
+        </nav>
+      </div>
+    </section>
+
+
+    <!-- Load JS -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+
+    <script src="js/nav-page-handler.js"></script>
+    <script src="js/video-formatter.js"></script>
+
+    </body>
+    </html>
+
+    

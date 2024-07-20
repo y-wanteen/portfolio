@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang ="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name=viewport content="width=device-width, initial-scale=1">
+
+    <title>Beep // Game Design</title>
+
+    <link rel="shortcut icon" type="image/x-icon" href="imgs/favicon.ico">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/grid.css" rel="stylesheet">
+    <!-- normalize css from https://necolas.github.io/normalize.css/ -->
+    <link href="css/normalize.css" rel="stylesheet"> 
+    <link href="css/angled-edges.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <!-- FIXED HEADER NAVIGATION BAR /////////////////////////////////// -->
+    <section class="header-bar project-page-nav page-top">
+
+      <div class="header-content-left">
+        <a href="index.html">
+         <div class="header-initial-icon">
+          <svg id="header-icon" data-name="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+              <polygon class="icon-line" points="25 50.23 275 50.23 275 50.23 150 249.76"/>
+              <!-- W -->
+              <line class="icon-line" x1="81.31" y1="140.78" x2="150.1" y2="50.24"/>
+              <line class="icon-line" x1="149.9" y1="50.24" x2="218.69" y2="140.78"/>
+              <!-- T -->
+              <line class="icon-line" x1="150" y1="50.24" x2="150" y2="249.34"/>
+              <!--Y-->
+              <line class="icon-line" x1="101.83" y1="112.04" x2="150.07" y2="169.53" />
+              <line class="icon-line" x1="149.93" y1="169.53" x2="198.17" y2="112.04" />
+          </svg>
+        </div>
+
+        <h1 class="page-top-text"> WAN-TEEN YANG </h1>
+        </a>
+      </div>
+
+      <!-- navigation  -->
+      <nav class="nav-bar project-nav">
+        <a class="button project-nav-button" id="fixedNavProj" href="index.html#projects-section">RETURN TO PROJECTS</a>
+      </nav>
+
+    </section>
+
+    <!-- PROJECT TOP //////////////////////////////////////////////////////// -->
+
+    <section id="project-top" class="beep-bg">
+      <div class="bg-overlay"></div>
+      <div class="project-content">
+        <h1> BEEP </h1>
+      </div>
+    </section>
+
+    <section id="project-overview">
+      <div class="project-overview-content">
+
+        <h2 class="subheader"> OVERVIEW </h2>
+        <div class="overview">
+          <p> Beep, a short indie game created by five students, is about a pink alien ball who crash lands on a Cube planet. The Cubes steal Beep's spaceship and will attack our alien friend on sight! Beep can change into the enemies' shape with its morphing abilities in order to trick them, solve puzzles, and explore the alien planet to get back its stolen spaceship and return home. </p>
+       </div>
+
+        <div class="overview-breakdown">
+          <p>
+            <span class="label">ROLE:</span>
+            Lead Programmer (Player Mechanics, Cinematic Camera, Environment Features)
+          </p>
+          <p>
+            <span class="label">TOOLS:</span>
+            Unity3D, Visual Studio
+          </p>
+          <p>
+            <span class="label">TEAM:</span>
+            <span> Art: Nancy Chen, Danielle Ragas, Josephine Ryu </span>
+            <span> Programming: Christopher Wong, Wan-Teen Yang</span>
+          </p>
+        </div>
+      </div> 
+      <!-- end of overview content -->
+
+      <div class="nav-area">
+        <nav class="nav-bar">
+          <a href="https://drowningstudios.itch.io/beep" class="button">PLAY THE GAME</a>
+          <a href="https://beepgame.blogspot.com/" class="button">DEVELOPMENT BLOG</a>
+        </nav>
+      </div>
+
+    </section>
+
+    <!-- FINAL RESULT //////////////////////////////////////////////////////// -->
+
+    <section id="final-result">
+      <div class="project-content">
+        <h1> TEASER TRAILER </h1>
+        <div class="video">
+          <figure>
+            <iframe title="vimeo-player" src="https://player.vimeo.com/video/330174515" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONCEPT //////////////////////////////////////////////////////// -->
+
+    <section id="concept">
+      <div class="project-content">
+          <h1> BACKGROUND </h1>
+          <p>
+           Beep is a remake of a game with the same name created in 2017 for a game design course. Due to time constraints and lack of experience, the game was left with various bugs in the core game loop, unrefined levels, and an abrupt conclusion to the narrative — all of which left the team wholly unsatisfied as it stopped short of what we had envisioned.
+          </p>
+          <p>
+            The team later reconvened and decided that Beep needed a second chance — a complete overhaul that would improve upon the game’s original concept and execution. This time around, we subdivided the team into clear art and programming roles to improve our overall workflow and project pipeline. We also reduced the scope of our game so that we could focus on the quality of gameplay and levels in order to remake Beep into a game we could all be proud of.
+          </p>
+          <h1> CONCEPT DEVELOPMENT</h1>
+          <p>
+            Using the original concept of the game as a base, the team worked together to identify what worked well in the original version of the game and what needed improvement. The majority of the game’s original mechanics, such as morphing and enemy behaviour, were redesigned to open up the narrative, game and level design to more avenues we could explore to improve the game experience.
+          </p>
+
+          <span class="spacer"></span>
+
+          <div class="images">
+            <div class="img-col-3">
+              <img src="imgs/beep/2017-original/lvl5.gif" alt="cube enemy chasing player">
+            </div>
+            <div class="img-col-3">
+               <img src="imgs/beep/2017-original/lvl5-2.gif" alt="player killing enemy">
+            </div>
+            <div class="img-col-3">
+             <img src="imgs/beep/2017-original/puzzle-door.gif" alt="puzzle door with randomized switch combination">
+           </div>
+
+           <div class="img-caption-dark">| Screencaptures of gameplay in the 2017 original</div>
+          </div>
+
+        </div>
+    </section>
+
+    <!-- PROGRAMMING //////////////////////////////////////////////////////// -->
+
+    <section id="programming">
+      <div class="project-content">
+          <h1> PROGRAMMING</h1>
+          <p class="intro"> 
+            The main goals for the programming team included closely collaborating with the art team to bring new ideas to life through feature implementation and creating tools and features for non-developers to facilitate workflows. We also explored how camerawork could be used to communicate ideas to players, as part of the game concept was to have no written text outside of menus.
+
+            <span class="spacer"></span> 
+
+            As one of the lead programmers, I was responsible for implementing <a href="#player-mechanics">player mechanics</a>, <a href="#cinematic-camera">cinematic cameras</a>, and <a href="#environment-features">environment features</a>.
+          </p>
+
+          <!-- PLAYER MECHANICS ///////-->
+          <div class="content-container" id="player-mechanics">
+            <h2 class="subheader"> Player Mechanics </h2>
+
+            <h3 class="subheader2"> Morphing </h3>
+              <p>
+                Morphing is the core gameplay mechanic enabling the pink alien, Beep, to hide from enemies and solve puzzles. This is a blend-shape animation-based system where a triggered event causes the alien to morph from a sphere into a cube and vice versa.
+              </p>
+
+              <p> 
+                This mechanic was originally triggered by having the player click on cubes placed in the environment. However, this control scheme for morphing was a hindrance to both the player and the level design — the player had less opportunities to play around with the fundamental game mechanic while the level design was severely restricted with components it had to have in place. 
+                Ultimately, the morphing mechanic was reworked to give the player free control over morphing outside of controlled cutscenes and give the team more freedom for applying the mechanic through the design of the game. 
+              </p>
+
+              <span class="spacer"></span>
+
+              <div class="images">
+                <div class="img-col-2"> 
+                  <img src="imgs/beep/2017-original/morph.gif" alt="alien morphing ability">
+                  <div class="img-caption">| Original Alien Morphing Ability </div>
+                </div>
+                <div class="img-col-2"> 
+                  <img src="imgs/beep/new-morphing.gif" alt="updated morphing ability">
+                  <div class="img-caption">| Updated Free Morphing Ability </div>
+                </div>
+              </div>
+
+              <h3 class="subheader2"> Camera </h3>
+
+              <p> 
+                The camera frames the entirety of the game experience that the player uses to perceive the gameworld with. In order to make full use of this and support non-verbal communication and story-telling through the environment, I explored different camera types such as isometric and third-person point of view (POV) cameras. 
+              </p>
+              <p>
+                After internal playtesting with these camera types, we found that the isometric camera limited the player’s view of the gameworld and caused player movement to feel awkward in relation to the fixed camera angle. On the other hand, the third-person POV camera gave the player an expanded perspective of the environment around them and felt like a more natural fit with our gameplay. Thus, we settled on using the third-person camera for the game.
+              </p>
+
+              <span class="spacer"></span>
+
+              <div class="images">
+                <div class="img-col-2"> 
+                  <img src="imgs/beep/camera-isometric.gif" alt="isometric camera">
+                  <div class="img-caption">| Isometric Camera (Development Screencapture)</div>
+                </div>
+                <div class="img-col-2"> 
+                  <img src="imgs/beep/third-person-pov.gif" alt="targeting system ui">
+                  <div class="img-caption">| Third-Person POV Camera</div>
+                </div>
+              </div>
+
+          </div>
+          <!-- end of content container -->
+
+          <!-- CINEMATIC CAMERA ///////////////////////////////-->
+
+          <div class="content-container" id="cinematic-camera">
+            <h2 class="subheader"> Cinematic Camera </h2>
+              <p>
+                I developed a cinematic camera system to highlight important details and gameplay moments that we wanted the player to pay attention to. The cinematic camera would hijack the default third person camera from the player, smoothly transition to a new position in the environment, and either wait for a specified period of time or for a Unity Timeline cinematic to finish playing before returning camera control to the player. 
+              </p>
+
+               <span class="spacer"></span>
+
+              <div class="images">
+                <div class="img-col-2"> 
+                  <img src="imgs/beep/cinematic-button-press.gif" alt="cinematic button effect">
+                  <div class="img-caption">| Button Press Gameplay Event Cinematic (Development Screencapture) </div>
+                </div>
+                <div class="img-col-2"> 
+                  <img src="imgs/beep/cinematic-narrative-moment.gif" alt="cinematic bridge narrative">
+                  <div class="img-caption">| Narrative Moment Cinematic (Development Screencapture) </div>
+                </div>
+              </div>
+
+              <p>
+                The cinematic camera system was also used when implementing tutorialization to connect narrative moments with gameplay and introduce new features and mechanics to players. I was responsible for implementing the tutorial cutscenes because I was familiar with both the cinematic camera system and the core game mechanics that needed special treatment and default behaviour overriding during tutorialization.
+              </p>
+
+              <span class="spacer"></span>
+             <div class="images col-full">
+                <div class="img-col-2"> 
+                    <img src="imgs/beep/cinematic-tutorial.gif" alt="morph tutorial cinematic">
+                    <div class="img-caption">| Morph Tutorial Cinematic</div>
+                  </div>
+                  <div class="img-col-2"> 
+                    <img src="imgs/beep/cinematic-narrative-tutorial.gif" alt="button pressing tutorial cinematic ">
+                    <div class="img-caption">| Button Tutorial Cinematic tied in with Narrative (Development Screencapture) </div>
+                  </div>
+              </div>
+
+              <p>
+                Over the course of development for this camera system, I found that working with the smooth transitions between camera positions and orientations could be challenging to work with and needed a lot of fine-tuning. Certain transitions could feel particularly unnatural and jarring to the player when control was abruptly taken from them.
+              </p>
+            
+          </div>
+          <!-- end of content container -->
+
+          <!-- ENVIRONMENT FEATURES  ///////////////-->
+
+          <div class="content-container" id="environment-features">
+            <h2 class="subheader"> Environment Features</h2>
+            
+              <p>
+                The environment features and mechanics make up the majority of the gameplay’s puzzle aspect. This primarily consisted of buttons, moving platforms, and air vents. I worked on the technical design of these features first so that I could plan out proper base classes and shared behaviours before the actual implementation. As these features are heavily tied in with how the levels are designed, I also had to work with a mindset for making components that contained exposed properties and adjustable settings to allow the art team to freely experiment with different gameplay and level design. I wanted the features to be flexible and coherent enough for the art team to be able to learn how to use them quickly without building up too much feature bulk. These features also went through several iterations as refinements and requests for other behaviours to add or remove were made throughout the game and level design process.
+              </p>
+              
+              <p>
+                The moving platforms and air vents could all either be controlled by buttons or work automatically without them. When working automatically, settings such as pause interval lengths could be adjusted by level designers. These elements could also be configured to require pressing multiple buttons in order to activate them.
+              </p>
+
+              <p>
+                Moving platforms were implemented as elements that would both help and hinder the player as they traversed through the environment. They have settings that can be set in the Unity Inspector to inform the component of things such as what type of behaviour to use, what direction to move the block in, and how long until it moves back to its original position if a button is no longer pressed. 
+              </p>
+
+               <span class="spacer"></span>
+              <div class="images col-full">
+                <div class="img-col-2"> 
+                  <img src="imgs/beep/moving-platform-door.gif" alt="moving platform as a door">
+                  <div class="img-caption">| Moving Platform used as a Door </div>
+                </div>
+                <div class="img-col-2"> 
+                  <img src="imgs/beep/environment-config-door.png" alt="config settings for door">
+                  <div class="img-caption">| Exposed Settings for Door Setup in the Unity Inspector</div>
+                </div>
+              </div>
+
+               <span class="spacer"></span>
+              <div class="images col-full">
+                <div class="img-col-2"> 
+                  <img src="imgs/beep/moving-platform-elevator.gif" alt="moving platform as an elevator">
+                  <div class="img-caption">| Moving Platform used as an Elevator </div>
+                </div>
+                <div class="img-col-2"> 
+                  <img src="imgs/beep/environment-config-elevator.png" alt="config settings for eleavtor">
+                  <div class="img-caption">| Loading Screen </div>
+                </div>
+              </div>
+
+               <span class="spacer"></span>
+              <div class="images col-full">
+                <div class="img-col-2"> 
+                  <img src="imgs/beep/moving-platform-auto.gif" alt="moving platform moving automatically">
+                  <div class="img-caption">| Automatically Moving Platform </div>
+                </div>
+                <div class="img-col-2"> 
+                  <img src="imgs/beep/environment-config-auto.png" alt="config settings for auto platform">
+                  <div class="img-caption">| Loading Screen </div>
+                </div>
+              </div>
+
+              <p>
+                The initial prototype for air vents were created by Chris to use physics to push the player in a certain direction. As our responsibilities and focuses shifted around during development, I worked to refine his prototype so that it could inherit shared behaviours with other button controlled elements. 
+              </p>
+
+              <span class="spacer"></span>
+              <div class="images col-full">
+                <div class="img-col-2"> 
+                  <img src="imgs/beep/air-vent-button.gif" alt="button controlled air vent">
+                 
+                </div>
+                <div class="img-col-2"> 
+                  <img src="imgs/beep/air-vent-prototyping-2.gif" alt="directional air vents">
+                </div>
+                 <div class="img-caption">| Air Vent Refinement Prototyping </div>
+              </div>
+           
+          </div>
+          <!-- end of content container -->
+
+      </div>
+    </section>
+
+    <!-- REFLECTION //////////////////////////////////////////////////////// -->
+
+    <section id="reflection">
+      <div class="project-content">
+        <h1> REFLECTION </h1>
+        <p>
+          Throughout development, I learned how to better work in parallel in a large team with carefully subdivided roles to streamline our project pipeline. I had a lot of fun learning and developing systems and mechanics such as the cinematic camera, and giving extra attention to minor details such as adding screen shake to emphasize impacts.
+        </p>
+        <p>
+          Learning from our past mistakes during the development of the original, we allotted more time dedicated to playtesting and implementing feedback in order to polish gameplay. I found this to be a very important phase during development as it would help us improve the overall experience for players. Although we ran into issues with being too ambitious and having too large of a project scope again, we were able to identify the issue earlier on and further reduce our scope, creating 5 playable levels of around 20-30 minutes of gameplay.
+        </p>
+        <p>
+          Revisiting Beep allowed us to make a 3D adventure game with a complete narrative that explores non-verbal communication and challenges players to discover methods of using the morphing mechanic to progress through the world. With the implementation of a smoother dynamic camera to assist with storytelling in combination with unique game mechanics and responsive AI, we were able to create a fun and immersive experience that ultimately left us proud and satisfied with our work.
+        </p>
+
+        <span class="spacer"></span>
+
+        <h3 class="subheader2">(Bonus: Development Bloopers)</h3>
+        <span class="spacer"></span>
+              <div class="images col-full">
+                <div class="img-col-2"> 
+                  <img src="imgs/beep/bonus-back-hit.gif" alt="bonus: enemy hit">
+                 
+                </div>
+                <div class="img-col-2"> 
+                  <img src="imgs/beep/bonus-trampoline.gif" alt="bonus: unintentional effects of physics">
+                </div>
+              </div>
+      </div>
+
+      <div class="nav-area">
+        <nav class="nav-bar nav-bar-end">
+          <a href="https://drowningstudios.itch.io/beep" class="button">CHECK OUT THE GAME!</a>
+          <!-- <iframe frameborder="0" src="https://itch.io/embed/408265" width="552" height="167"></iframe> -->
+        </nav>
+      </div>
+    </section>
+
+
+    <!-- Load JS -->
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+
+    <script src="js/nav-page-handler.js"></script>
+    <script src="js/video-formatter.js"></script>
+    
+
+    </body>
+    </html>
+
+    
